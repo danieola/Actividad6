@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        
+        .contenedor-formulario {
+            background-color: white;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 9px 9px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        
+        button {
+            background-color: rgb(7, 105, 253);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: rgb(34, 34, 69);
+        }
+
+        
+        p {
+            text-align: center;
+            font-size: 14px;
+            color: #7d7d7d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-formulario">
+        <h1>Formulario de Contacto</h1>
+        <p>Llena los campos a continuación y nos comunicaremos contigo a la brevedad</p>
+
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                <option value="">Selecciona tu país</option>
+                <option value="México">México</option>
+                <option value="Corea del Sus">Corea del Sus</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Italia">Italia</option>
+            </select>
+
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>
